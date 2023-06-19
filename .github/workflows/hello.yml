@@ -1,17 +1,17 @@
-name: Say hello
+name: Say Hello
 
 on:
-  push:
+  push: 
     branches:
       - main
 
-jobs:
+jobs: 
   hello_world:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Echo the message
-        run: |
-          echo "Hola midu!"
-      - name: Dime la fecha
+        run: echo "Hola Jose"
+      - name: Fecha
         run: date
-      - run: ls -l
+      - name: Directorio actual
+        run: pwd
